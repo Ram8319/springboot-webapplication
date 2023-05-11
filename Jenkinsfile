@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('docker-login') {
+      steps {
+        sh 'docker login'
+      }
+    }
+
   }
 }
